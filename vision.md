@@ -73,6 +73,30 @@ It would be useful to have these at some point:
 *   Running simulation updates in parallel
 *   Running the simulation on separate servers
 
+Designing a full simulation engine to support the project is probably
+too much, but there should be various reusable patterns and components,
+especially around things such as:
+
+*   State tracking
+*   State history recording, including graphical views
+*   Maintaining consistent time and scheduling
+*   Displaying tabular views of clans in a settlement, production
+    activity, etc.
+*   Displaying tooltips and other detailed views in the UI
+*   Displaying detailed calculations showing where numbers come from
+*   Navigating to UI views of different simulation entities and back
+*   Notifications and event logs
+
+Though calling generative AI inside the simulation won't be an initial
+focus, it could be very relevant at some point for things like:
+
+*   Agent decision-making
+*   Summarizing agent/world state
+*   Generating "news reports" on recent developments
+*   Generating special events
+*   Diplomatic interactions
+*   Narrative dramatizations of simulation events
+
 # Initial Model Description
 
 The initial model will focus on the early stages of the project scope,
